@@ -46,10 +46,15 @@ namespace ClientList
             this.lstView.ItemSelected += (item, d) =>
             {
                 var idt = (ListView)item;
+                if(idt.SelectedItem == null) return;
                 this.Navigation.PushAsync(new NewClient((Client)idt.SelectedItem));
             };
-            Db.DefaultManager.GetClientsAsync(true);
+        Db.DefaultManager.GetClientsAsync(true);
         }
-        
+        protected override void OnAppearing()
+        {
+            this.lstView.SelectedItem = null;
+        }
+
     }
 }

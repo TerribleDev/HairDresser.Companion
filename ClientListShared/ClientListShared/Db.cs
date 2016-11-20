@@ -28,7 +28,7 @@ namespace ClientList
         MobileServiceClient client;
        
         IMobileServiceSyncTable<Client> todoTable;
-        public static string ClientUrl {get{throw new NotImplementedException();}}
+        public static string ClientUrl {get{ throw new NotImplementedException(); }}
         public static ObservableCollection<Client> Clients { get; set; } = new ObservableCollection<Client>() { };
         private Db()
         {

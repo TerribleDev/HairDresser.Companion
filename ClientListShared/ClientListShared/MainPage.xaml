@@ -4,5 +4,4 @@
              xmlns:local="clr-namespace:ClientList"
              x:Class="ClientList.MainPage">
 	<ListView x:Name="lstView"></ListView>
-	
 </ContentPage>
