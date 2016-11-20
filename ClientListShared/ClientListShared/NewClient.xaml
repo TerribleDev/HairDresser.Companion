@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ClientList.NewClient">
+	<ScrollView>
+		<StackLayout x:Name="slLayout">
+			<Entry x:Name="FirstName" Placeholder="FirstName"  Text="{Binding FirstName}"></Entry>
+			<Entry x:Name="LastName" Placeholder="LastName" Text="{Binding LastName}"></Entry>
+			<Entry x:Name="PhoneNumber" Placeholder="PhoneNumber" Keyboard="Telephone" Text="{Binding PhoneNumber}"></Entry>
+			<Entry x:Name="Email" Placeholder="Email" Keyboard="Email" Text="{Binding Email}"></Entry>
+			<Entry x:Name="Address" Placeholder="Address" Text="{Binding Address}"></Entry>
+			<Entry x:Name="HairTexture" Placeholder="HairTexture" Text="{Binding HairTexture}"></Entry>
+			<Entry x:Name="HairStrand" Placeholder="HairStrand" Text="{Binding HairStrand}"></Entry>
+			<Entry x:Name="HairCondition" Placeholder="HairCondition" Text="{Binding HairCondition}"></Entry>
+			<Entry x:Name="Porosity" Placeholder="Porosity" Text="{Binding Porosity}"></Entry>
+			<Entry x:Name="Elasticity" Placeholder="Elasticity" Text="{Binding Elasticity}"></Entry>
+			<Label Text="Formula:"></Label>
+			<Editor x:Name="Formula" Text="{Binding Formula}" HeightRequest="100"></Editor>
+			<Label Text="Notes:"></Label>
+			<Editor x:Name="Notes" Text="{Binding Notes}" HeightRequest="100"></Editor>
+		</StackLayout>
+	</ScrollView>
+</ContentPage>
